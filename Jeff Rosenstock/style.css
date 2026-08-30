@@ -13,23 +13,36 @@ body {
 	background-image: url('images/I_look_like_shit.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-#theThree {
-	text-align: center;
-	
+	font-family: arial;
+	font-size: 24px;
+	color: #c9ac18;
+	text-shadow: 2px 2px 4px black; 
+	background-position: ;
 }
 
-span {
-	padding: 50px;
+#bibliography{
+	font-family: Times New Roman;
 }
+
+#descriptions {
+    text-align: center;
+    
+}
+
+.threeQualities {
+    display: inline-block;
+    padding: 0px  40px 0px 40px;
+    text-align: center; 
+    font-size: 40px;
+    font-family: Arial;
+}
+
+
 #quote {
-
-  
-  
   background-image: linear-gradient(45deg, red, orange, yellow, green, blue, violet, red);
   background-size: 400% 100%;
   background-position: 0% 50%;
-  
+  font-size: 30px;
   background-clip: text;
   color: transparent;
   animation-name: panRainbow;
@@ -43,16 +56,47 @@ span {
   100% {background-position: 400% 50%;}
 }
 
-#quote {
-	font-size: 40px;
-  font-weight: bold;
-  animation-name: waveText;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#carousel {
+	
 }
-@keyframes waveText {
-	from {font-size: 40px;}
-	to {font-size: 60px}
+
+li {
+	padding: 10px;
+}
+
+#albumCarousel {
+width: 700px;
+max-height: 800px;
+overflow-y: auto;
+display: inline-block;
+
+}
+
+.album {
+display: none;
+}
+
+.album.active {
+display: block;
+}
+
+.albumCover {
+width: 300px;
+height: 300px;
+object-fit: cover;
+}
+
+#carousel {
+text-align: center;
+}
+
+#previous,
+#next {
+font-size: 40px;
+padding: 10px 20px;
+vertical-align: middle;
+}
+
+#music{
+	display: center;
 }
